@@ -1,0 +1,173 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  margin-left: 280px;
+  padding: 3rem 4rem;
+}
+
+.header {
+  margin-bottom: 2.5rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: var(--text-secondary);
+}
+
+.filterBar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.filterBtn {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 0.625rem 1.25rem;
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: var(--transition);
+}
+
+.filterBtn:hover {
+  border-color: var(--text-muted);
+}
+
+.activeFilter {
+  background: var(--primary);
+  color: var(--bg-base);
+  border-color: var(--primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.tipCard {
+  background: var(--bg-surface);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.tipCard:hover {
+  border-color: var(--primary-glow);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.tipTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.iconBox {
+  width: 44px;
+  height: 44px;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+
+.iconBox[data-category="transport"] { color: var(--info); }
+.iconBox[data-category="energy"] { color: var(--warning); }
+.iconBox[data-category="food"] { color: var(--primary); }
+
+.impact {
+  text-align: right;
+}
+
+.impactVal {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 1.125rem;
+}
+
+.impactLabel {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.tipTitle {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.tipDesc {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
+.tipMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.difficulty {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+.easy { background: rgba(0, 200, 150, 0.1); color: var(--primary); }
+.medium { background: rgba(79, 195, 247, 0.1); color: var(--info); }
+.hard { background: rgba(255, 179, 71, 0.1); color: var(--warning); }
+
+.bookmarkBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.bookmarkBtn:hover {
+  color: var(--primary);
+}
+
+.isBookmarked {
+  color: var(--primary);
+}
+
+@media (max-width: 1024px) {
+  .content {
+    margin-left: 80px;
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,35 @@
+# ─────────────────────────────────────────────
+#  Carbon Footprint Platform — Backend Requirements
+#  Python 3.13+ Compatible (using pre-built binary wheels)
+# ─────────────────────────────────────────────
+
+# ── Web Framework ──────────────────────────────
+fastapi==0.115.6               # Core API framework (compatible with pydantic v2 latest)
+uvicorn[standard]==0.30.1      # ASGI server (with websocket + reload support)
+
+# ── Database ───────────────────────────────────
+sqlalchemy==2.0.30             # ORM for DB models and queries
+aiosqlite==0.20.0              # Async SQLite driver (dev database)
+alembic==1.13.1                # Database migrations
+
+# ── Authentication & Security ──────────────────
+python-jose[cryptography]==3.3.0  # JWT token creation and verification
+passlib[bcrypt]==1.7.4            # Password hashing with bcrypt
+python-multipart==0.0.9           # Form data parsing (login forms)
+
+# ── Validation & Settings ──────────────────────
+pydantic[email]==2.11.5        # Request/response schema validation (latest with py3.13 wheels)
+pydantic-settings==2.9.1       # Environment variable management
+
+# ── Rate Limiting ──────────────────────────────
+slowapi==0.1.9                 # Rate limiting middleware for FastAPI
+
+# ── Utilities ──────────────────────────────────
+python-dotenv==1.0.1           # Load .env file into environment
+python-dateutil==2.9.0         # Date parsing utilities
+
+# ── Testing ────────────────────────────────────
+pytest==8.2.2                  # Test framework
+pytest-asyncio==0.23.7         # Async test support
+httpx==0.27.0                  # HTTP client (used by FastAPI TestClient)
+pytest-cov==5.0.0              # Code coverage reporting

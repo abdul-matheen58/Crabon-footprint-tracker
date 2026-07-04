@@ -1,0 +1,272 @@
+{
+  "energy": {
+    "electricity": {
+      "unit": "kWh",
+      "factor": 0.386,
+      "label": "Electricity (US avg)",
+      "source": "EPA 2024"
+    },
+    "natural_gas": {
+      "unit": "m³",
+      "factor": 2.04,
+      "label": "Natural Gas",
+      "source": "EPA 2024"
+    },
+    "heating_oil": {
+      "unit": "litre",
+      "factor": 2.54,
+      "label": "Heating Oil",
+      "source": "DEFRA 2024"
+    },
+    "propane": {
+      "unit": "litre",
+      "factor": 1.51,
+      "label": "Propane / LPG",
+      "source": "EPA 2024"
+    },
+    "solar": {
+      "unit": "kWh",
+      "factor": 0.0,
+      "label": "Solar Energy",
+      "source": "IPCC"
+    },
+    "wind": {
+      "unit": "kWh",
+      "factor": 0.0,
+      "label": "Wind Energy",
+      "source": "IPCC"
+    }
+  },
+  "transport": {
+    "petrol_car": {
+      "unit": "km",
+      "factor": 0.192,
+      "label": "Petrol Car",
+      "source": "DEFRA 2024"
+    },
+    "diesel_car": {
+      "unit": "km",
+      "factor": 0.171,
+      "label": "Diesel Car",
+      "source": "DEFRA 2024"
+    },
+    "electric_car": {
+      "unit": "km",
+      "factor": 0.053,
+      "label": "Electric Car",
+      "source": "DEFRA 2024"
+    },
+    "hybrid_car": {
+      "unit": "km",
+      "factor": 0.112,
+      "label": "Hybrid Car",
+      "source": "DEFRA 2024"
+    },
+    "motorcycle": {
+      "unit": "km",
+      "factor": 0.113,
+      "label": "Motorcycle",
+      "source": "DEFRA 2024"
+    },
+    "bus": {
+      "unit": "km",
+      "factor": 0.089,
+      "label": "Bus / Public Transit",
+      "source": "DEFRA 2024"
+    },
+    "train": {
+      "unit": "km",
+      "factor": 0.041,
+      "label": "Train / Metro",
+      "source": "DEFRA 2024"
+    },
+    "domestic_flight": {
+      "unit": "km",
+      "factor": 0.255,
+      "label": "Domestic Flight",
+      "source": "DEFRA 2024"
+    },
+    "international_flight": {
+      "unit": "km",
+      "factor": 0.195,
+      "label": "International Flight",
+      "source": "DEFRA 2024"
+    },
+    "bicycle": {
+      "unit": "km",
+      "factor": 0.0,
+      "label": "Bicycle",
+      "source": "N/A"
+    },
+    "walking": {
+      "unit": "km",
+      "factor": 0.0,
+      "label": "Walking",
+      "source": "N/A"
+    }
+  },
+  "food": {
+    "beef": {
+      "unit": "kg",
+      "factor": 27.0,
+      "label": "Beef",
+      "source": "IPCC AR6"
+    },
+    "lamb": {
+      "unit": "kg",
+      "factor": 24.0,
+      "label": "Lamb / Mutton",
+      "source": "IPCC AR6"
+    },
+    "pork": {
+      "unit": "kg",
+      "factor": 7.6,
+      "label": "Pork",
+      "source": "IPCC AR6"
+    },
+    "chicken": {
+      "unit": "kg",
+      "factor": 6.9,
+      "label": "Chicken / Poultry",
+      "source": "IPCC AR6"
+    },
+    "fish": {
+      "unit": "kg",
+      "factor": 5.4,
+      "label": "Fish / Seafood",
+      "source": "IPCC AR6"
+    },
+    "eggs": {
+      "unit": "kg",
+      "factor": 4.8,
+      "label": "Eggs",
+      "source": "IPCC AR6"
+    },
+    "dairy": {
+      "unit": "kg",
+      "factor": 3.2,
+      "label": "Dairy (Milk, Cheese)",
+      "source": "IPCC AR6"
+    },
+    "rice": {
+      "unit": "kg",
+      "factor": 2.7,
+      "label": "Rice",
+      "source": "IPCC AR6"
+    },
+    "vegetables": {
+      "unit": "kg",
+      "factor": 2.0,
+      "label": "Vegetables",
+      "source": "IPCC AR6"
+    },
+    "fruits": {
+      "unit": "kg",
+      "factor": 1.1,
+      "label": "Fruits",
+      "source": "IPCC AR6"
+    },
+    "legumes": {
+      "unit": "kg",
+      "factor": 0.9,
+      "label": "Legumes / Beans",
+      "source": "IPCC AR6"
+    },
+    "bread": {
+      "unit": "kg",
+      "factor": 1.3,
+      "label": "Bread / Grains",
+      "source": "IPCC AR6"
+    }
+  },
+  "shopping": {
+    "clothing": {
+      "unit": "item",
+      "factor": 30.0,
+      "label": "New Clothing Item",
+      "source": "WRAP UK"
+    },
+    "smartphone": {
+      "unit": "unit",
+      "factor": 70.0,
+      "label": "Smartphone",
+      "source": "Apple ESR 2024"
+    },
+    "laptop": {
+      "unit": "unit",
+      "factor": 300.0,
+      "label": "Laptop Computer",
+      "source": "Dell ESR 2024"
+    },
+    "furniture": {
+      "unit": "item",
+      "factor": 100.0,
+      "label": "Furniture Item",
+      "source": "DEFRA 2024"
+    },
+    "books": {
+      "unit": "item",
+      "factor": 2.71,
+      "label": "Book / Magazine",
+      "source": "Green Press"
+    },
+    "shoes": {
+      "unit": "pair",
+      "factor": 14.0,
+      "label": "Shoes (pair)",
+      "source": "MIT Study"
+    },
+    "appliance": {
+      "unit": "unit",
+      "factor": 150.0,
+      "label": "Home Appliance",
+      "source": "DEFRA 2024"
+    }
+  },
+  "waste": {
+    "landfill": {
+      "unit": "kg",
+      "factor": 0.57,
+      "label": "Landfill Waste",
+      "source": "EPA 2024"
+    },
+    "recycling": {
+      "unit": "kg",
+      "factor": -0.18,
+      "label": "Recycling (saves CO₂)",
+      "source": "EPA 2024"
+    },
+    "composting": {
+      "unit": "kg",
+      "factor": -0.1,
+      "label": "Composting (saves CO₂)",
+      "source": "EPA 2024"
+    },
+    "plastic_waste": {
+      "unit": "kg",
+      "factor": 0.95,
+      "label": "Plastic Waste",
+      "source": "DEFRA 2024"
+    },
+    "food_waste": {
+      "unit": "kg",
+      "factor": 2.53,
+      "label": "Food Waste (landfill)",
+      "source": "EPA 2024"
+    },
+    "paper_waste": {
+      "unit": "kg",
+      "factor": 0.46,
+      "label": "Paper / Cardboard Waste",
+      "source": "DEFRA 2024"
+    }
+  },
+  "global_averages": {
+    "world_per_capita_yearly_tonnes": 4.7,
+    "us_per_capita_yearly_tonnes": 14.7,
+    "eu_per_capita_yearly_tonnes": 6.1,
+    "india_per_capita_yearly_tonnes": 1.9,
+    "china_per_capita_yearly_tonnes": 8.0,
+    "uk_per_capita_yearly_tonnes": 5.2
+  }
+}
